@@ -36,6 +36,11 @@ This Discord bot allows users to update a local text file via a slash command. T
     ```
     DISCORD_TOKEN=your-discord-bot-token
     FILE_PATH=path/to/your/textfile.txt
+    REMOTE_FILE_PATH = /path/to/remote/file.txt
+
+    HOSTNAME = your_remote_host_ip
+    USERNAME = your_remote_username
+    SSH_KEY_PATH = /path/to/your/private/key
     ```
 
 5. **Enable Privileged Gateway Intents:**
@@ -48,10 +53,16 @@ This Discord bot allows users to update a local text file via a slash command. T
 ## Usage
 
 1. **Run the bot:**
+    To change local files
     ```sh
     python bot.py
     ```
 
+    To change remote files
+    ```sh
+    python remote_bot.py
+    ```
+    
 2. **Invite the bot to your server:**
    - Generate an invite link from the Discord Developer Portal with the necessary permissions (including slash commands).
    - Open the invite link in your browser and invite the bot to your server.
